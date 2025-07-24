@@ -97,6 +97,13 @@ qdel 12345
 
 Use **`lquota`** to check the status of your quota. The result will be something like:
 
+|Storage | Used       |Quota        |% Used |  Path
+|--------|------------|-------------|-------|---------
+|home    | 43.85 GiB  |  100.00 GiB | 43%   | /home/mmmXXXX
+|scratch | 80.56 GiB  |  250.00 GiB | 32%   | /scratch/mmmXXXX
+
+
+
 Best Practices & Tips
 ---------------------
 
