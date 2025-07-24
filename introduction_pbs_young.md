@@ -103,6 +103,17 @@ Use **`lquota`** to check the status of your quota. The result will be something
 
 indicating your current disk space usage. 
 
+`budgets`: Checking your credit and Gold hours:
+------------------------------------------------------
+
+Use **`budgets`** to check the status of your budget (CPU time with Gold priviliges). The result will be something
+like:
+
+|Project         |Machines|Balance   |
+|----------------|--------|----------|
+|KCL_YOUR_PROJECT|   ANY  |124016.79 |
+
+
 Best Practices & Tips
 ---------------------
 
