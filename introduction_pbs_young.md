@@ -3,14 +3,15 @@ Interactive Guide to HPC Commands
 
 Your essential toolkit for navigating High-Performance Computing clusters.
 
-Introduction \`qsub\` \`qstat\` \`qdel\` Best Practices
+Introducing **`qsub`** **`qstat`** **`qdel`** commands in Young and best practices!
 
 What is a Job Scheduler?
 ------------------------
 
 Imagine a library with only a few study rooms, but hundreds of students needing to use them. A librarian would manage who gets a room, for how long, and when. In an HPC cluster, the "librarian" is the \*\*Job Scheduler\*\*.
 
-It's a system that manages a queue of jobs, allocating resources like CPUs and memory to ensure fair and efficient use of the cluster among all users. The commands \`qsub\`, \`qstat\`, and \`qdel\` are your primary tools for interacting with this "librarian."
+It's a system that manages a queue of jobs, allocating resources like CPUs and memory to ensure fair and efficient use of the cluster among all users. The commands **`qsub`**, **`qstat`**, and **`qdel`** are your primary tools 
+for interacting with this "librarian."
 
 ### The Job Lifecycle
 
@@ -34,10 +35,10 @@ A job goes through several states from submission to completion. Click on each s
 
 Job completes or is deleted with **`qdel`**
 
-\`qsub\`: Submitting Your Job
+`qsub`: Submitting Your Job
 -----------------------------
 
-The \`qsub\` (Queue Submit) command is used to send your job script to the scheduler. This script contains resource requests and the commands to execute.
+The **`qsub`** (Queue Submit) command is used to send your job script to the scheduler. This script contains resource requests and the commands to execute.
 
 ### Interactive Job Script
 
@@ -62,10 +63,10 @@ Hover over the highlighted directives in the script below to understand what eac
     echo "Job finished successfully!"
     
 
-\`qstat\`: Checking Job Status
+`qstat` Checking Job Status
 ------------------------------
 
-\`qstat\` is your window into the scheduler, showing the status of your jobs and others on the cluster. The most important column is \`State\`.
+**`qstat`** is your window into the scheduler, showing the status of your jobs and others on the cluster. The most important column is \`State\`.
 
 ### Understanding \`qstat\` Output
 
