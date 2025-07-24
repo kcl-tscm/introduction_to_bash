@@ -6,6 +6,6 @@ using a HPC facility. The pedagogical material is stored in <https://github.com/
 
 # Test yur knowledge 
 
-There is an on-line availble quiz to test your knowledge:
+There is an on-line availble quiz to test your knowledge in bash:
 
 https://g.co/gemini/share/e4f16dc9f99d
