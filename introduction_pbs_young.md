@@ -24,16 +24,15 @@ A job goes through several states from submission to completion. Click on each s
 
 #### 2\. Queued
 
-\`qstat\` shows 'Q'
-
+**`qstat`** shows 'Q'
 
 #### 3\. Running
 
-\`qstat\` shows 'R'
+**`qstat`** shows 'R'
 
 #### 4\. Finished
 
-Job completes or is deleted with \`qdel\`
+Job completes or is deleted with **`qdel`**
 
 \`qsub\`: Submitting Your Job
 -----------------------------
