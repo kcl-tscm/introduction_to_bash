@@ -102,7 +102,7 @@ Use **`lquota`** to check the status of your quota. The result will be something
 |home    | 43.85 GiB  |  100.00 GiB | 43%   | /home/mmmXXXX
 |scratch | 80.56 GiB  |  250.00 GiB | 32%   | /scratch/mmmXXXX
 
-
+indicating your current disk space usage. 
 
 Best Practices & Tips
 ---------------------
