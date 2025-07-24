@@ -20,25 +20,19 @@ A job goes through several states from submission to completion. Click on each s
 
 \`qsub\`
 
-→
 
 #### 2\. Queued
 
 \`qstat\` shows 'Q'
 
-→
 
 #### 3\. Running
 
 \`qstat\` shows 'R'
 
-→
-
 #### 4\. Finished
 
 Job completes or is deleted with \`qdel\`
-
-Click a step above to see its description.
 
 \`qsub\`: Submitting Your Job
 -----------------------------
