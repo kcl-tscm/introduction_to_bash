@@ -18,8 +18,9 @@ A job goes through several states from submission to completion. Click on each s
 
 #### 1\. Submit
 
+```bash
 \`qsub\`
-
+```
 
 #### 2\. Queued
 
