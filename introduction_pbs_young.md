@@ -92,6 +92,11 @@ For example, to delete the job **`12345.scheduler`**, you would run:
 qdel 12345
 ```
 
+`lquota`: Checking your account's disk space:
+---------------------------------------------------
+
+Use **`lquota`** to check the status of your quota. The result will be something like:
+
 Best Practices & Tips
 ---------------------
 
