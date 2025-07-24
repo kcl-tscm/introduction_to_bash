@@ -40,7 +40,7 @@ Job completes or is deleted with **`qdel`**
 
 The **`qsub`** (Queue Submit) command is used to send your job script to the scheduler. This script contains resource requests and the commands to execute.
 
-### Interactive Job Script
+### Interactive Job Script (job.sh)
 
 Hover over the highlighted directives in the script below to understand what each one does.
 
