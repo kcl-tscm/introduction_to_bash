@@ -69,45 +69,10 @@ Hover over the highlighted directives in the script below to understand what eac
 
 ### Understanding \`qstat\` Output
 
-Job ID
-
-Username
-
-Queue
-
-Jobname
-
-State
-
-12345.scheduler
-
-your\_user
-
-standard
-
-MyFirstJob
-
-R (Running)
-
-12346.scheduler
-
-another\_user
-
-long
-
-DataAnalysis
-
-Q (Queued)
-
-**R**: Running
-
-**Q**: Queued
-
-**H**: Held
-
-**E**: Exiting
-
-**C**: Completed
+Job ID             Username    Queue    Jobname       State
+------------------ ----------- -------- ------------- -------
+12345.scheduler    your_user   standard MyFirstJob    R (Running)
+12346.scheduler    another_user long     DataAnalysis  Q (Queued)
 
 \`qdel\`: Deleting a Job
 ------------------------
