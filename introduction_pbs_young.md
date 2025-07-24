@@ -44,18 +44,17 @@ The **`qsub`** (Queue Submit) command is used to send your job script to the sch
 
 Hover over the highlighted directives in the script below to understand what each one does.
 
-    #!/bin/bash
-    # This is a sample PBS job script
-    
-    #PBS -N MyFirstJobJob Name: A descriptive name for your job, making it easy to identify with `qstat`.       # Job name
-    #PBS -l walltime=00:05:00Wall-Clock Time: The maximum real-world time (HH:MM:SS) your job is allowed to run. The scheduler will terminate the job if it exceeds this limit. # Wall-clock time limit
-    #PBS -l nodes=1:ppn=1Resource Request: Specifies the number of nodes (computers) and processors-per-node (CPU cores) your job needs. `nodes=1:ppn=1` is one core on one machine.     # Request 1 node, 1 processor
-    #PBS -q standardQueue Name: Submits the job to a specific queue. Clusters have different queues for different job types (e.g., short, long, gpu).          # Specify a queue
-    #PBS -j oeJoin Output/Error: Combines the standard output (stdout) and standard error (stderr) streams into a single file for convenience.                # Join standard output and error
-    #PBS -o my_job_output.logOutput File: Specifies the name for the combined output and error file. If omitted, a default name is used. # Specify output file name
-    
-    # Change to the directory where you submitted the job
-    cd $PBS_O_WORKDIR
+    #!/bin/bash -l # Specifies the script should be run with Bash as a login shell.
+
+    # PBS Directives:
+    #$ -l h_rt=48:00:00 # Sets the hard runtime limit for the job to 48 hours (maximum allowed in Young).
+    #$ -l mem=4.5G       # Requests 4.5 Gigabytes of memory for the job.
+    #$ -pe mpi 40       # Requests 40 cores using the MPI parallel environment.
+    #$ -N First_job      # Names the job "First_job".
+    #$ -A KCL_YOUR_GROUP # Specifies the accounting project for resource usage.
+    #$ -ac allow=Y      # Allows the job to run on specific nodes/partitions.
+    #$ -P Gold      # Assigns the job to the "GoldLong" queue.
+    #$ -cwd             # Executes the job from the current working directory.
     
     echo "Hello from my first HPC job!"
     echo "Current date and time: $(date)"
