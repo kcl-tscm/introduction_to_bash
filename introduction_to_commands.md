@@ -38,18 +38,24 @@ ls stands for "list". It lists the files and directories within your current wor
 
 ### Simple Examples
 
-- **List contents of the current directory:**  
+- **List contents of the current directory:**
+  ```bash
     ls  
-
-- **List contents in a long format (shows more details like permissions, owner, size, date):**  
+  ```
+  
+- **List contents in a long format (shows more details like permissions, owner, size, date):**
+  ```bash 
     ls -l  
-
-- **List all files, including hidden ones (those starting with a .)**:  
+  ```
+  
+- **List all files, including hidden ones (those starting with a .)**:
+   ```bash
     ls -a  
-
-- **Combine options (long format and all files):**  
-    ls -la  
-
+   ```
+- **Combine options (long format and all files):**
+  ```bash
+    ls -la
+  ```
 - **List contents of a specific directory (e.g., your Desktop):**  
     ls ~/Desktop  
 
