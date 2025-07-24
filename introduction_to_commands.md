@@ -148,25 +148,30 @@ cat stands for "concatenate". Its primary use is to display the content of files
 
 ### Simple Examples
 
-- **Display the content of a file named my_notes.txt:**  
+- **Display the content of a file named my_notes.txt:**
+  ```bash 
     cat my_notes.txt  
-
-- **Display the content of multiple files:**  
+  ```
+  
+- **Display the content of multiple files:**
+  ```bash 
     cat file1.txt file2.txt  
-
-- **Create a new file and type content directly into it (press Ctrl+D to save and exit):**  
+  ``` 
+- **Create a new file and type content directly into it (press Ctrl+D to save and exit):**
+  ```bash 
     cat > new_file.txt  
     This is the first line.  
     This is the second line.  
     (Press Ctrl+D here)  
     <br/>Then you can cat new_file.txt to see its content.
-
+  ``` 
 ### Getting More Help with man
 
 To learn more about cat, type:
 
+```bash 
 man cat  
-
+``` 
 ## 6\. cp - Copy Files and Directories
 
 ### What it does
@@ -175,24 +180,35 @@ cp stands for "copy". It's used to copy files and directories from one location 
 
 ### Simple Examples
 
-- **Copy a file named report.txt to report_backup.txt in the same directory:**  
+- **Copy a file named report.txt to report_backup.txt in the same directory:**
+- 
+  ```bash 
     cp report.txt report_backup.txt  
-
-- **Copy document.pdf to the my_project directory:**  
+  ```
+  
+- **Copy document.pdf to the my_project directory:**
+  ```bash 
     cp document.pdf my_project/  
-
-- **Copy image.jpg to the pictures directory, renaming it to vacation_pic.jpg:**  
+  ```
+  
+- **Copy image.jpg to the pictures directory, renaming it to vacation_pic.jpg:**
+  ```bash 
     cp image.jpg pictures/vacation_pic.jpg  
-
-- **Copy an entire directory (my_project) and its contents to a new location (archives):**  
+  ```
+   
+- **Copy an entire directory (my_project) and its contents to a new location (archives):**
+  ```bash 
     cp -r my_project archives/  
     <br/>(The -r option is crucial for copying directories; it stands for "recursive".)
 
+  ``` 
 ### Getting More Help with man
 
 To learn more about cp, type:
 
+```bash 
 man cp  
+```
 
 ## 7\. mv - Move or Rename Files and Directories
 
@@ -202,20 +218,26 @@ mv stands for "move". It's used to move files and directories from one location 
 
 ### Simple Examples
 
-- **Rename a file from old_name.txt to new_name.txt:**  
+- **Rename a file from old_name.txt to new_name.txt:**
+  ```bash 
     mv old_name.txt new_name.txt  
-
-- **Move presentation.pptx to the documents directory:**  
+  ``` 
+- **Move presentation.pptx to the documents directory:**
+  ```bash  
     mv presentation.pptx documents/  
-
-- **Move temp_folder to backup_data directory:**  
+  ```
+- **Move temp_folder to backup_data directory:**
+  ```bash   
     mv temp_folder backup_data/  
-
+  ```
+  
 ### Getting More Help with man
 
 To learn more about mv, type:
 
+```bash 
 man mv  
+```
 
 ## 8\. rm - Remove Files or Directories
 
@@ -225,29 +247,41 @@ rm stands for "remove". It's used to delete files and directories. **Be very car
 
 ### Simple Examples
 
-- **Delete a file named junk.txt:**  
+- **Delete a file named junk.txt:**
+  ```bash   
     rm junk.txt  
-
-- **Delete multiple files:**  
+  ```
+  
+- **Delete multiple files:**
+  ```bash   
     rm file1.txt file2.txt  
-
-- **Delete an empty directory named empty_folder:**  
+  ``` 
+- **Delete an empty directory named empty_folder:**
+  ```bash 
     rmdir empty_folder  
     <br/>_Note: rmdir only works for empty directories. For non-empty directories, use rm -r._
+  ```
+   
 - **Delete a non-empty directory (old_project) and all its contents (use with extreme caution!):**  
     rm -r old_project  
 
-- **Force delete a file without prompting for confirmation (even if it's write-protected):**  
+- **Force delete a file without prompting for confirmation (even if it's write-protected):**
+  ```bash 
     rm -f sensitive_data.log  
-
-- **Delete a non-empty directory and its contents, prompting for confirmation for each item:**  
+  ```
+  
+- **Delete a non-empty directory and its contents, prompting for confirmation for each item:**
+  ```bash 
     rm -ri messy_folder  
-
+  ```
+   
 ### Getting More Help with man
 
 To learn more about rm, type:
 
+```bash 
 man rm  
+```
 
 ## 9\. head - Display First Lines of a File
 
@@ -257,17 +291,23 @@ head displays the beginning (first few lines) of a file. It's useful for quickly
 
 ### Simple Examples
 
-- **Display the first 10 lines (default) of log_file.txt:**  
+- **Display the first 10 lines (default) of log_file.txt:**
+  ```bash  
     head log_file.txt  
-
-- **Display the first 5 lines of document.md:**  
+  ```
+   
+- **Display the first 5 lines of document.md:**
+  ```bash 
     head -n 5 document.md  
-
+  ```
+   
 ### Getting More Help with man
 
 To learn more about head, type:
 
+```bash 
 man head  
+```
 
 ## 10\. tail - Display Last Lines of a File
 
@@ -277,21 +317,25 @@ tail displays the end (last few lines) of a file. This is particularly useful fo
 
 ### Simple Examples
 
-- **Display the last 10 lines (default) of access.log:**  
+- **Display the last 10 lines (default) of access.log:**
+  ```bash 
     tail access.log  
-
-- **Display the last 20 lines of error.log:**  
+  ```
+- **Display the last 20 lines of error.log:**
+  ```bash 
     tail -n 20 error.log  
-
-- **Continuously display new lines as they are added to a file (useful for real-time monitoring of logs):**  
+  ``` 
+- **Continuously display new lines as they are added to a file (useful for real-time monitoring of logs):**
+  ```bash 
     tail -f application.log  
     <br/>(Press Ctrl+C to stop following the file.)
-
+  ``` 
 ### Getting More Help with man
 
 To learn more about tail, type:
-
+```bash 
 man tail  
+```
 
 ## 11\. grep - Global Regular Expression Print
 
@@ -301,27 +345,36 @@ grep is an incredibly powerful command used for searching plain-text data sets f
 
 ### Simple Examples
 
-- **Find all lines containing the word "error" in system.log:**  
+- **Find all lines containing the word "error" in system.log:**
+  ```bash 
     grep "error" system.log  
-
-- **Find "warning" in app.log, ignoring case (case-insensitive search):**  
+  ``` 
+- **Find "warning" in app.log, ignoring case (case-insensitive search):**
+  ```bash 
     grep -i "warning" app.log  
-
-- **Find "success" in web.log and display the line number where it's found:**  
+  ```
+- **Find "success" in web.log and display the line number where it's found:**
+  ```bash  
     grep -n "success" web.log  
-
-- **Find "failure" in all .txt files in the current directory:**  
+  ```
+   
+- **Find "failure" in all .txt files in the current directory:**
+  ```bash 
     grep "failure" \*.txt  
-
-- **Search for "config" in all files within a directory and its subdirectories (recursive search):**  
+  ```
+   
+- **Search for "config" in all files within a directory and its subdirectories (recursive search):**
+  ```bash 
     grep -r "config" .  
     <br/>(The . means the current directory)
-
+  ``` 
 ### Getting More Help with man
 
 To learn more about grep, type:
 
+```bash 
 man grep  
+```
 
 ## 12\. history - Command History
 
@@ -331,23 +384,30 @@ history displays a list of previously executed commands. This is super handy for
 
 ### Simple Examples
 
-- **Display your entire command history:**  
+- **Display your entire command history:**
+  ```bash  
     history  
-
-- **Display the last 10 commands:**  
+  ``` 
+- **Display the last 10 commands:**
+  ```bash 
     history 10  
-
-- **Execute a command from history by its number (e.g., execute command number 500):**  
+  ```
+- **Execute a command from history by its number (e.g., execute command number 500):**
+  ```bash 
     !500  
-
-- **Execute the last command that started with "grep":**  
+  ``` 
+- **Execute the last command that started with "grep":**
+  ```bash 
     !grep  
-
+  ```
+   
 ### Getting More Help with man
 
 To learn more about history, type:
 
+```bash 
 man history  
+```
 
 _Note: Like cd, history is often a shell built-in, so man history might point to the bash man page._
 
@@ -359,19 +419,23 @@ clear simply clears your terminal screen, moving all previous output out of view
 
 ### Simple Example
 
-- **Clear the screen:**  
+- **Clear the screen:**
+  ```bash 
     clear  
     <br/>(You can also often achieve this with the keyboard shortcut Ctrl+L.)
+  ``` 
 
 ### Getting More Help with man
 
 To learn more about clear, type:
 
+```bash 
 man clear  
+```
 
 ## Conclusion
 
-Congratulations! You've just taken your first big steps into the world of Bash. These commands are the building blocks for many more complex operations you'll perform on the command line.
+Congratulations! You've finished this crash-cours in BASH. These commands are the building blocks for many more complex operations you'll perform on the command line.
 
 **Key Takeaways:**
 
@@ -379,4 +443,3 @@ Congratulations! You've just taken your first big steps into the world of Bash. 
 - Don't be afraid to experiment! Create a "playground" directory (mkdir playground, cd playground) where you can safely create, copy, move, and delete files without affecting your important data.
 - **The man command is your best friend!** Whenever you're unsure about a command or want to explore its full capabilities, man is there to help.
 
-Keep exploring, keep learning, and enjoy the power of the command line!
