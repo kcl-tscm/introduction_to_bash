@@ -77,16 +77,20 @@ Hover over the highlighted directives in the script below to understand what eac
 |12346.scheduler   | another_user | long     | DataAnalysis | Q (Queued)  |
 
 
-\`qdel\`: Deleting a Job
+`qdel`: Deleting a Job
 ------------------------
 
-Use \`qdel\` to cancel a job that is either running or waiting in the queue. You might do this if you realize there's a mistake in your script or if you no longer need the results.
+Use **`qdel`** to cancel a job that is either running or waiting in the queue. You might do this if you realize there's a mistake in your script or if you no longer need the results.
 
+```bash
 qdel <Job\_ID>
+```
 
-For example, to delete the job \`12345.scheduler\`, you would run:
+For example, to delete the job **`12345.scheduler`**, you would run:
 
+```bash
 qdel 12345
+```
 
 Best Practices & Tips
 ---------------------
@@ -101,13 +105,9 @@ Request minimal resources for initial tests. This gets your job scheduled faster
 
 Whenever possible, test your scripts on the login node with small datasets to catch simple errors before submission.
 
-### 3\. Use \`$PBS\_O\_WORKDIR\`
+### 3\. Meaningful Job Names
 
-Always \`cd\` to this directory in your script to ensure your job runs in the correct location relative to your files.
-
-### 4\. Meaningful Job Names
-
-Use \`#PBS -N\` with a descriptive name. \`Analysis\_Phase1\` is better than \`MyJob\`.
+Use **`#PBS -N`** with a descriptive name. **`Analysis\_Phase1`** is better than **`MyJob`**.
 
 ### 5\. Check Output Files
 
