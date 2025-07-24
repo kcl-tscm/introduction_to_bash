@@ -12,9 +12,15 @@ pwd stands for "Print Working Directory". It tells you exactly where you are in 
 
 ### Simple Example
 
-pwd  
+```bash
+pwd
+```
+
 \# Expected output might be something like:  
-\# /home/yourusername/Documents  
+
+```bash
+ /home/yourusername/Documents  
+```
 
 ### Getting More Help with man
 
