@@ -26,7 +26,9 @@ pwd
 
 To learn more about pwd, type:
 
+```bash
 man pwd  
+```
 
 (Press q to exit the man page.)
 
@@ -63,7 +65,9 @@ ls stands for "list". It lists the files and directories within your current wor
 
 To learn more about ls, type:
 
+```bash
 man ls  
+```
 
 ## 3\. mkdir - Make Directory
 
@@ -73,20 +77,26 @@ mkdir stands for "make directory". It's used to create new directories (folders)
 
 ### Simple Examples
 
-- **Create a new directory named my_project in the current location:**  
+- **Create a new directory named my_project in the current location:**
+  ```bash
     mkdir my_project  
-
-- **Create multiple directories at once:**  
+  ```
+- **Create multiple directories at once:**
+  ```bash
     mkdir project_alpha project_beta  
-
-- **Create a directory and its parent directories if they don't exist (useful for nested structures):**  
+  ```
+  
+- **Create a directory and its parent directories if they don't exist (useful for nested structures):**
+  ```bash
     mkdir -p my_new_app/src/components  
-
+  ```
 ### Getting More Help with man
 
 To learn more about mkdir, type:
 
-man mkdir  
+```bash
+man mkdir
+``` 
 
 ## 4\. cd - Change Directory
 
@@ -96,29 +106,38 @@ cd stands for "change directory". This command allows you to navigate through yo
 
 ### Simple Examples
 
-- **Change to the my_project directory (assuming it's in your current directory):**  
-    cd my_project  
+- **Change to the my_project directory (assuming it's in your current directory):**
+   ```bash
+    cd my_project
+   ```
 
-- **Go up one level (to the parent directory):**  
-    cd ..  
+- **Go up one level (to the parent directory):**
+  ```bash
+    cd ..
+  ```
 
-- **Go to your home directory (a very common shortcut):**  
+- **Go to your home directory (a very common shortcut):**
+  ```bash
     cd  
     \# or  
-    cd ~  
+    cd ~
+  ```
+- **Go to the previous directory you were in:**
+  ```bash  
+    cd ..
+  ``` 
 
-- **Go to the previous directory you were in:**  
-    cd -  
-
-- **Change to a specific directory using its full path:**  
+- **Change to a specific directory using its full path:**
+  ```bash
     cd /usr/local/bin  
-
+  ```
 ### Getting More Help with man
 
 To learn more about cd, type:
 
+```bash
 man cd  
-
+```
 _Note: cd is often a shell built-in command, so man cd might redirect you to the bash man page or provide a brief summary._
 
 ## 5\. cat - Concatenate and Display Files
